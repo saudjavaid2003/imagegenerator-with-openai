@@ -1,6 +1,6 @@
 import React from 'react'
 
-const carx = () => {
+const Card = () => {
   return (
     <div>
         form
@@ -9,4 +9,4 @@ const carx = () => {
   )
 }
 
-export default carx
+export default Card
