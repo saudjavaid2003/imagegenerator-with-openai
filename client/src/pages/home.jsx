@@ -17,7 +17,7 @@ const Rendercards = ({ data, title }) => {
 };
 
 const Home = () => {
-  const [searchtext, setsearchtext] = useState('');
+  const [searchtext, setsearchtext] = useState('1222');
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState([]);
 
@@ -51,7 +51,7 @@ const Home = () => {
             {/* Search Results Header */}
             {searchtext && (
               <h2 className='font-medium text-[#666e75] text-xl mb-3'>
-                Showing results for{' '}
+                Showing results for
                 <span className='text-[#222328]'>{searchtext}</span>
               </h2>
             )}
