@@ -17,12 +17,14 @@ const CreateImage = () => {
 
   // Handle input changes
   const handleChange = (e) => {
+      setForm({ ...form, [e.target.name]: e.target.value });
   
   };
 
   // Handle Surprise Me button
   const handleSurpriseMe = () => {
- 
+    const randomPrompt = getRandomPrompt();
+    setForm({ ...form, prompt: randomPrompt });
   };
 
   // Image Generation (Dummy function)
@@ -96,6 +98,24 @@ const CreateImage = () => {
           </button>
 
         
+        </div>
+        <div className='mt-10'>
+          <p>
+            once you create GO ahead and download it toshow it to your firends
+          </p>
+          
+           <button
+            type='submit'
+            className='bg-green-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-700 transition-all'
+
+          >
+            {
+              loading?"sharing":"share"
+              
+            }
+             </button>
+          
+
         </div>
       </form>
     </section>
