@@ -1,4 +1,5 @@
-const surprisedPrompts = [
+const  surpriseMePrompts = [
+
     "A cat discovering its own reflection for the first time",
     "An astronaut finding a burger floating in space",
     "A dog speaking fluent English to a group of humans",
@@ -26,5 +27,5 @@ const surprisedPrompts = [
     "A book opening itself and talking to the reader"
   ];
   
-  export default surprisedPrompts;
+  export default  surpriseMePrompts
   
